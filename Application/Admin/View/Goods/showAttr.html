@@ -1,0 +1,64 @@
+
+    <foreach name="attrData" item="attr">
+        <if condition="$attr[attr_type] eq 0">
+            <!--//属性类型唯一-->
+                <if condition="$attr[attr_input_type] eq 0">
+                    <!--//手工录入-->
+                    <tr>
+                        <td  class="label">{$attr.attr_name}：</td>
+                        <td><input type="text " name="attr[]"></td>
+                    </tr>
+                    <else/>
+                    <!--//列表选择-->
+                    <tr>
+            <td  class="label">{$attr.attr_name}：</td>
+            <td>
+                <select name="attr[{$attr[id]}][]" >
+                    <foreach name="attr[attr_value]" item="val">
+                        <option value="{$val}">{$val}</option>
+                    </foreach>
+                </select>
+            </td>
+        </tr>
+        </if>
+            <else/>
+            <!--//属性类型单选-->
+            <if condition="$attr[attr_input_type] eq 0">
+                <!--//手工录入-->
+                <tr>
+                    <td  class="label">{$attr.attr_name}：</td>
+                    <td><input type="text " name="attr[]"></td>
+                </tr>
+                <else/>
+
+                <tr>
+                    <td  class="label"><a href="javascript:" onclick="copyown(this)">[+]</a>{$attr.attr_name}：</td>
+                    <td>
+                        <select name="attr[{$attr[id]}][]" >
+                            <foreach name="attr[attr_value]" item="val">
+                                <option value="{$val}">{$val}</option>
+                            </foreach>
+                        </select>
+                    </td>
+                </tr>
+            </if>
+        </if>
+    </foreach>
+
+    <script>
+        function copyown(o){
+            //取出当前行
+            var current_row=$(o).parents('tr');
+            //复制当前行
+            if($(o).html()=='[+]'){
+                var new_row = current_row.clone();
+                //把复制的新行中a标签的内容由[+]改为[-]
+                new_row.find('a').html('[-]');
+                //将新行放置当前行后
+                current_row.after(new_row);
+            }else{
+                //删除a内容为[-]的行
+                current_row.remove();
+            }
+        }
+    </script>

@@ -1,0 +1,8 @@
+CREATE TABLE mall.mall_goods_attr
+(
+	id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT COMMENT 'id',
+	goods_id SMALLINT NOT NULL COMMENT '商品ID',
+	attr_id SMALLINT NOT NULL COMMENT '属性ID',
+	attr_value VARCHAR(255) NOT NULL DEFAULT '' COMMENT '商品属性值' 
+)ENGINE myisam CHARSET utf8;
+ALTER TABLE mall.mall_goods_attr COMMENT = '商品属性表';

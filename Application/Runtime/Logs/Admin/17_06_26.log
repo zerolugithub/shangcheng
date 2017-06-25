@@ -1,0 +1,858 @@
+[ 2017-06-26T00:09:14+08:00 ] 127.0.0.1 /rootwww/shop/admin/login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000767s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001181s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001423s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000194s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000442s ]
+NOTIC: [8] Use of undefined constant cookie - assumed 'cookie' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\0dfec61edd66f450033aa87c28a760f4.php 第 27 行.
+NOTIC: [8] Undefined variable: Think F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\0dfec61edd66f450033aa87c28a760f4.php 第 27 行.
+NOTIC: [8] Use of undefined constant admin_admin_name - assumed 'admin_admin_name' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\0dfec61edd66f450033aa87c28a760f4.php 第 27 行.
+NOTIC: [8] Use of undefined constant cookie - assumed 'cookie' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\0dfec61edd66f450033aa87c28a760f4.php 第 33 行.
+NOTIC: [8] Undefined variable: Think F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\0dfec61edd66f450033aa87c28a760f4.php 第 33 行.
+NOTIC: [8] Use of undefined constant admin_password - assumed 'admin_password' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\0dfec61edd66f450033aa87c28a760f4.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018366s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018607s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000838s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001062s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001262s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001508s ]
+
+[ 2017-06-26T00:09:14+08:00 ] 127.0.0.1 /rootwww/shop/index.php/Admin/Login/captcha
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000881s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002624s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001258s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001531s ]
+
+[ 2017-06-26T00:09:25+08:00 ] 127.0.0.1 /rootwww/shop/index.php/Admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000836s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001282s ]
+SQL: SHOW COLUMNS FROM `mall_admin` [ RunTime:0.0061s ]
+NOTIC: [8] Undefined index: auto F:\tp-project\rootwww\shop\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `mall_admin` WHERE `admin_name` = 'admin' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000201s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000478s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013210s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013478s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001038s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001248s ]
+
+[ 2017-06-26T00:09:26+08:00 ] 127.0.0.1 /rootwww/shop/index.php/Admin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000833s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001301s ]
+SQL: SHOW COLUMNS FROM `mall_attribute` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `mall_type` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `mall_category` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `mall_goods` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `mall_brand` [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000161s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000420s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013709s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013973s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000891s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001150s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001344s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001586s ]
+
+[ 2017-06-26T00:09:26+08:00 ] 127.0.0.1 /rootwww/shop/index.php/Admin/Index/top.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000735s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001059s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001311s ]
+SQL: SHOW COLUMNS FROM `mall_attribute` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `mall_type` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `mall_category` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mall_goods` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `mall_brand` [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000198s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000447s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012032s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012292s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000760s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000983s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001088s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001302s ]
+
+[ 2017-06-26T00:09:26+08:00 ] 127.0.0.1 /rootwww/shop/index.php/Admin/Index/menu.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000965s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001093s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001374s ]
+SQL: SHOW COLUMNS FROM `mall_attribute` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `mall_type` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `mall_category` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `mall_goods` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `mall_brand` [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000307s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000537s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021239s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000784s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000984s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001440s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002072s ]
+
+[ 2017-06-26T00:09:26+08:00 ] 127.0.0.1 /rootwww/shop/index.php/Admin/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000769s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002964s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003219s ]
+SQL: SHOW COLUMNS FROM `mall_attribute` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `mall_type` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `mall_category` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `mall_goods` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `mall_brand` [ RunTime:0.0037s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000209s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000473s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019206s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019487s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000817s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001065s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001272s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001544s ]
+
+[ 2017-06-26T00:09:28+08:00 ] 127.0.0.1 /rootwww/shop/index.php/Admin/type/lst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000798s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001007s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001251s ]
+SQL: SHOW COLUMNS FROM `mall_attribute` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `mall_type` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `mall_category` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `mall_goods` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `mall_brand` [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mall_type` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `mall_type` LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000200s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000438s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\9e1e5841af12860e6ba08b9e55eb68af.php 第 37 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\9e1e5841af12860e6ba08b9e55eb68af.php 第 38 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\9e1e5841af12860e6ba08b9e55eb68af.php 第 37 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\9e1e5841af12860e6ba08b9e55eb68af.php 第 38 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\9e1e5841af12860e6ba08b9e55eb68af.php 第 37 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\9e1e5841af12860e6ba08b9e55eb68af.php 第 38 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\9e1e5841af12860e6ba08b9e55eb68af.php 第 37 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\9e1e5841af12860e6ba08b9e55eb68af.php 第 38 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\9e1e5841af12860e6ba08b9e55eb68af.php 第 37 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\9e1e5841af12860e6ba08b9e55eb68af.php 第 38 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\9e1e5841af12860e6ba08b9e55eb68af.php 第 37 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\9e1e5841af12860e6ba08b9e55eb68af.php 第 38 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\9e1e5841af12860e6ba08b9e55eb68af.php 第 37 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\9e1e5841af12860e6ba08b9e55eb68af.php 第 38 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026486s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026721s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000720s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000934s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001312s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001861s ]
+
+[ 2017-06-26T00:09:28+08:00 ] 127.0.0.1 /rootwww/shop/index.php/Admin/goods/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000885s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000875s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001029s ]
+SQL: SHOW COLUMNS FROM `mall_attribute` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `mall_type` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `mall_category` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `mall_goods` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `mall_brand` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `mall_brand` WHERE ( is_show=1 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `mall_type`  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `mall_category` WHERE `status` = 1  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000297s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015206s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015361s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000655s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001318s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001730s ]
+
+[ 2017-06-26T00:09:29+08:00 ] 127.0.0.1 /rootwww/shop/index.php/Admin/goods/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001648s ]
+SQL: SHOW COLUMNS FROM `mall_attribute` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `mall_type` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `mall_category` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `mall_goods` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `mall_brand` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `mall_brand` WHERE ( is_show=1 )  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `mall_type`  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `mall_category` WHERE `status` = 1  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000234s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000475s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021919s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022182s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000819s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001027s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002181s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002442s ]
+
+[ 2017-06-26T00:09:31+08:00 ] 127.0.0.1 /rootwww/shop/index.php/Admin/goods/lst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000844s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001139s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001416s ]
+SQL: SHOW COLUMNS FROM `mall_attribute` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `mall_type` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `mall_category` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `mall_goods` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `mall_brand` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `mall_category` WHERE `status` = 1  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `mall_goods` WHERE `is_delete` = 0  [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000274s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000510s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 112 行.
+NOTIC: [8] Undefined variable: val F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 114 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 115 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 117 行.
+NOTIC: [8] Undefined variable: showPage F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 128 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025905s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026141s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000840s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001055s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001314s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001588s ]
+
+[ 2017-06-26T00:09:33+08:00 ] 127.0.0.1 /rootwww/shop/index.php/Admin/type/lst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000456s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000808s ]
+SQL: SHOW COLUMNS FROM `mall_attribute` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `mall_type` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `mall_category` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `mall_goods` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `mall_brand` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mall_type` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `mall_type` LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000258s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\9e1e5841af12860e6ba08b9e55eb68af.php 第 37 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\9e1e5841af12860e6ba08b9e55eb68af.php 第 38 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\9e1e5841af12860e6ba08b9e55eb68af.php 第 37 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\9e1e5841af12860e6ba08b9e55eb68af.php 第 38 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\9e1e5841af12860e6ba08b9e55eb68af.php 第 37 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\9e1e5841af12860e6ba08b9e55eb68af.php 第 38 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\9e1e5841af12860e6ba08b9e55eb68af.php 第 37 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\9e1e5841af12860e6ba08b9e55eb68af.php 第 38 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\9e1e5841af12860e6ba08b9e55eb68af.php 第 37 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\9e1e5841af12860e6ba08b9e55eb68af.php 第 38 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\9e1e5841af12860e6ba08b9e55eb68af.php 第 37 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\9e1e5841af12860e6ba08b9e55eb68af.php 第 38 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\9e1e5841af12860e6ba08b9e55eb68af.php 第 37 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\9e1e5841af12860e6ba08b9e55eb68af.php 第 38 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012912s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013289s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000519s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000677s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000772s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000919s ]
+
+[ 2017-06-26T00:09:34+08:00 ] 127.0.0.1 /rootwww/shop/index.php/Admin/brand/lst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000450s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000616s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000743s ]
+SQL: SHOW COLUMNS FROM `mall_attribute` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `mall_type` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `mall_category` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `mall_goods` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `mall_brand` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `mall_brand` WHERE `is_show` = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000269s ]
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\6be123300bd3bf15436cbc79ad313de4.php 第 50 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\6be123300bd3bf15436cbc79ad313de4.php 第 56 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\6be123300bd3bf15436cbc79ad313de4.php 第 50 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\6be123300bd3bf15436cbc79ad313de4.php 第 56 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\6be123300bd3bf15436cbc79ad313de4.php 第 50 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\6be123300bd3bf15436cbc79ad313de4.php 第 56 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\6be123300bd3bf15436cbc79ad313de4.php 第 50 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\6be123300bd3bf15436cbc79ad313de4.php 第 56 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\6be123300bd3bf15436cbc79ad313de4.php 第 50 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\6be123300bd3bf15436cbc79ad313de4.php 第 56 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011707s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011863s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000558s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000845s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001011s ]
+
+[ 2017-06-26T00:09:35+08:00 ] 127.0.0.1 /rootwww/shop/index.php/Admin/category/lst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000531s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001221s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001458s ]
+SQL: SHOW COLUMNS FROM `mall_attribute` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `mall_type` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `mall_category` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `mall_goods` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mall_brand` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `mall_category` WHERE `status` = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000198s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000333s ]
+NOTIC: [8] Use of undefined constant nav_show - assumed 'nav_show' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 38 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 41 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 45 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 46 行.
+NOTIC: [8] Use of undefined constant nav_show - assumed 'nav_show' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 38 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 41 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 45 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 46 行.
+NOTIC: [8] Use of undefined constant nav_show - assumed 'nav_show' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 38 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 41 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 45 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 46 行.
+NOTIC: [8] Use of undefined constant nav_show - assumed 'nav_show' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 38 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 41 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 45 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 46 行.
+NOTIC: [8] Use of undefined constant nav_show - assumed 'nav_show' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 38 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 41 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 45 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 46 行.
+NOTIC: [8] Use of undefined constant nav_show - assumed 'nav_show' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 38 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 41 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 45 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 46 行.
+NOTIC: [8] Use of undefined constant nav_show - assumed 'nav_show' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 38 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 41 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 45 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 46 行.
+NOTIC: [8] Use of undefined constant nav_show - assumed 'nav_show' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 38 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 41 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 45 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 46 行.
+NOTIC: [8] Use of undefined constant nav_show - assumed 'nav_show' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 38 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 41 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 45 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 46 行.
+NOTIC: [8] Use of undefined constant nav_show - assumed 'nav_show' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 38 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 41 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 45 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\tp-project\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 46 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015148s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015274s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000597s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000800s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000955s ]
+
+[ 2017-06-26T00:10:58+08:00 ] 127.0.0.1 /admin/login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000554s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000738s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000911s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000179s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000406s ]
+NOTIC: [8] Use of undefined constant cookie - assumed 'cookie' D:\rootwww\shop\Application\Runtime\Cache\Admin\0dfec61edd66f450033aa87c28a760f4.php 第 27 行.
+NOTIC: [8] Undefined variable: Think D:\rootwww\shop\Application\Runtime\Cache\Admin\0dfec61edd66f450033aa87c28a760f4.php 第 27 行.
+NOTIC: [8] Use of undefined constant admin_admin_name - assumed 'admin_admin_name' D:\rootwww\shop\Application\Runtime\Cache\Admin\0dfec61edd66f450033aa87c28a760f4.php 第 27 行.
+NOTIC: [8] Use of undefined constant cookie - assumed 'cookie' D:\rootwww\shop\Application\Runtime\Cache\Admin\0dfec61edd66f450033aa87c28a760f4.php 第 33 行.
+NOTIC: [8] Undefined variable: Think D:\rootwww\shop\Application\Runtime\Cache\Admin\0dfec61edd66f450033aa87c28a760f4.php 第 33 行.
+NOTIC: [8] Use of undefined constant admin_password - assumed 'admin_password' D:\rootwww\shop\Application\Runtime\Cache\Admin\0dfec61edd66f450033aa87c28a760f4.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012929s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013111s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000674s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000913s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001049s ]
+
+[ 2017-06-26T00:10:58+08:00 ] 127.0.0.1 /index.php/Admin/Login/captcha
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000769s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001096s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001352s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001265s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001693s ]
+
+[ 2017-06-26T00:11:07+08:00 ] 127.0.0.1 /index.php/Admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000653s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000639s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000773s ]
+SQL: SHOW COLUMNS FROM `mall_admin` [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000255s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007118s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007254s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000586s ]
+
+[ 2017-06-26T00:11:11+08:00 ] 127.0.0.1 /index.php/Admin/Login/captcha?0.7529989835143449
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000569s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000915s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001125s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000667s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000818s ]
+
+[ 2017-06-26T00:11:16+08:00 ] 127.0.0.1 /index.php/Admin/Login/captcha?0.7320051343857199
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000603s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000742s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000702s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000860s ]
+
+[ 2017-06-26T00:11:21+08:00 ] 127.0.0.1 /index.php/Admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000479s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000565s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000726s ]
+SQL: SHOW COLUMNS FROM `mall_admin` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: auto D:\rootwww\shop\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `mall_admin` WHERE `admin_name` = 'admin' LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000230s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006663s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006795s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000499s ]
+
+[ 2017-06-26T00:11:22+08:00 ] 127.0.0.1 /index.php/Admin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000574s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000705s ]
+SQL: SHOW COLUMNS FROM `mall_attribute` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `mall_type` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `mall_category` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `mall_goods` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `mall_brand` [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000246s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007556s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007689s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000399s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000514s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000584s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000701s ]
+
+[ 2017-06-26T00:11:23+08:00 ] 127.0.0.1 /index.php/Admin/Index/top.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001191s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000817s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001006s ]
+SQL: SHOW COLUMNS FROM `mall_attribute` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `mall_type` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `mall_category` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `mall_goods` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mall_brand` [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000276s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014414s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014555s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000377s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000493s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000585s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000702s ]
+
+[ 2017-06-26T00:11:23+08:00 ] 127.0.0.1 /index.php/Admin/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000764s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000917s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001146s ]
+SQL: SHOW COLUMNS FROM `mall_attribute` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mall_type` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `mall_category` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `mall_goods` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mall_brand` [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000261s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009694s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009889s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000433s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000666s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000850s ]
+
+[ 2017-06-26T00:11:23+08:00 ] 127.0.0.1 /index.php/Admin/Index/menu.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000644s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000809s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000980s ]
+SQL: SHOW COLUMNS FROM `mall_attribute` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `mall_type` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `mall_category` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `mall_goods` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `mall_brand` [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000282s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000503s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014425s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014565s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000518s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000923s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001172s ]
+
+[ 2017-06-26T00:11:25+08:00 ] 127.0.0.1 /index.php/Admin/category/lst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000549s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000572s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000697s ]
+SQL: SHOW COLUMNS FROM `mall_attribute` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `mall_type` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `mall_category` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `mall_goods` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `mall_brand` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `mall_category` WHERE `status` = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000243s ]
+NOTIC: [8] Use of undefined constant nav_show - assumed 'nav_show' D:\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 38 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' D:\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 41 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 45 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 46 行.
+NOTIC: [8] Use of undefined constant nav_show - assumed 'nav_show' D:\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 38 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' D:\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 41 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 45 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 46 行.
+NOTIC: [8] Use of undefined constant nav_show - assumed 'nav_show' D:\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 38 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' D:\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 41 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 45 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 46 行.
+NOTIC: [8] Use of undefined constant nav_show - assumed 'nav_show' D:\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 38 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' D:\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 41 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 45 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 46 行.
+NOTIC: [8] Use of undefined constant nav_show - assumed 'nav_show' D:\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 38 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' D:\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 41 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 45 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 46 行.
+NOTIC: [8] Use of undefined constant nav_show - assumed 'nav_show' D:\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 38 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' D:\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 41 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 45 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 46 行.
+NOTIC: [8] Use of undefined constant nav_show - assumed 'nav_show' D:\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 38 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' D:\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 41 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 45 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 46 行.
+NOTIC: [8] Use of undefined constant nav_show - assumed 'nav_show' D:\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 38 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' D:\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 41 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 45 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 46 行.
+NOTIC: [8] Use of undefined constant nav_show - assumed 'nav_show' D:\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 38 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' D:\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 41 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 45 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 46 行.
+NOTIC: [8] Use of undefined constant nav_show - assumed 'nav_show' D:\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 38 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' D:\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 41 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 45 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\rootwww\shop\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 46 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014690s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014815s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000495s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000644s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000797s ]
+
+[ 2017-06-26T00:11:26+08:00 ] 127.0.0.1 /index.php/Admin/brand/lst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000552s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000609s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000738s ]
+SQL: SHOW COLUMNS FROM `mall_attribute` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `mall_type` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `mall_category` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `mall_goods` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `mall_brand` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `mall_brand` WHERE `is_show` = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000157s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000294s ]
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' D:\rootwww\shop\Application\Runtime\Cache\Admin\6be123300bd3bf15436cbc79ad313de4.php 第 50 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\rootwww\shop\Application\Runtime\Cache\Admin\6be123300bd3bf15436cbc79ad313de4.php 第 56 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' D:\rootwww\shop\Application\Runtime\Cache\Admin\6be123300bd3bf15436cbc79ad313de4.php 第 50 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\rootwww\shop\Application\Runtime\Cache\Admin\6be123300bd3bf15436cbc79ad313de4.php 第 56 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' D:\rootwww\shop\Application\Runtime\Cache\Admin\6be123300bd3bf15436cbc79ad313de4.php 第 50 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\rootwww\shop\Application\Runtime\Cache\Admin\6be123300bd3bf15436cbc79ad313de4.php 第 56 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' D:\rootwww\shop\Application\Runtime\Cache\Admin\6be123300bd3bf15436cbc79ad313de4.php 第 50 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\rootwww\shop\Application\Runtime\Cache\Admin\6be123300bd3bf15436cbc79ad313de4.php 第 56 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' D:\rootwww\shop\Application\Runtime\Cache\Admin\6be123300bd3bf15436cbc79ad313de4.php 第 50 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\rootwww\shop\Application\Runtime\Cache\Admin\6be123300bd3bf15436cbc79ad313de4.php 第 56 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012150s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012279s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000487s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000642s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000785s ]
+
+[ 2017-06-26T00:11:27+08:00 ] 127.0.0.1 /index.php/Admin/type/lst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000450s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000736s ]
+SQL: SHOW COLUMNS FROM `mall_attribute` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `mall_type` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `mall_category` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `mall_goods` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `mall_brand` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mall_type` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `mall_type` LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000269s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\rootwww\shop\Application\Runtime\Cache\Admin\9e1e5841af12860e6ba08b9e55eb68af.php 第 37 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\rootwww\shop\Application\Runtime\Cache\Admin\9e1e5841af12860e6ba08b9e55eb68af.php 第 38 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\rootwww\shop\Application\Runtime\Cache\Admin\9e1e5841af12860e6ba08b9e55eb68af.php 第 37 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\rootwww\shop\Application\Runtime\Cache\Admin\9e1e5841af12860e6ba08b9e55eb68af.php 第 38 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\rootwww\shop\Application\Runtime\Cache\Admin\9e1e5841af12860e6ba08b9e55eb68af.php 第 37 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\rootwww\shop\Application\Runtime\Cache\Admin\9e1e5841af12860e6ba08b9e55eb68af.php 第 38 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\rootwww\shop\Application\Runtime\Cache\Admin\9e1e5841af12860e6ba08b9e55eb68af.php 第 37 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\rootwww\shop\Application\Runtime\Cache\Admin\9e1e5841af12860e6ba08b9e55eb68af.php 第 38 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\rootwww\shop\Application\Runtime\Cache\Admin\9e1e5841af12860e6ba08b9e55eb68af.php 第 37 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\rootwww\shop\Application\Runtime\Cache\Admin\9e1e5841af12860e6ba08b9e55eb68af.php 第 38 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\rootwww\shop\Application\Runtime\Cache\Admin\9e1e5841af12860e6ba08b9e55eb68af.php 第 37 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\rootwww\shop\Application\Runtime\Cache\Admin\9e1e5841af12860e6ba08b9e55eb68af.php 第 38 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\rootwww\shop\Application\Runtime\Cache\Admin\9e1e5841af12860e6ba08b9e55eb68af.php 第 37 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\rootwww\shop\Application\Runtime\Cache\Admin\9e1e5841af12860e6ba08b9e55eb68af.php 第 38 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012959s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013102s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000742s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001401s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001607s ]
+
+[ 2017-06-26T00:11:27+08:00 ] 127.0.0.1 /index.php/Admin/goods/trash.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000441s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000610s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000742s ]
+SQL: SHOW COLUMNS FROM `mall_attribute` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `mall_type` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `mall_category` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `mall_goods` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `mall_brand` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `mall_goods` WHERE `is_delete` = 1  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000262s ]
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\rootwww\shop\Application\Runtime\Cache\Admin\48c0539f7c9ba8a8e8f2a908c461cd61.php 第 16 行.
+NOTIC: [8] Use of undefined constant main - assumed 'main' D:\rootwww\shop\Application\Runtime\Cache\Admin\48c0539f7c9ba8a8e8f2a908c461cd61.php 第 16 行.
+NOTIC: [2] Division by zero D:\rootwww\shop\Application\Runtime\Cache\Admin\48c0539f7c9ba8a8e8f2a908c461cd61.php 第 16 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009613s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009771s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000559s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000617s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000737s ]
+
+[ 2017-06-26T00:11:28+08:00 ] 127.0.0.1 /index.php/Admin/goods/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000434s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000797s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000955s ]
+SQL: SHOW COLUMNS FROM `mall_attribute` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `mall_type` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `mall_category` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `mall_goods` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `mall_brand` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `mall_brand` WHERE ( is_show=1 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `mall_type`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `mall_category` WHERE `status` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000164s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000317s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020751s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021070s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000669s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000843s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000798s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000966s ]
+
+[ 2017-06-26T00:11:29+08:00 ] 127.0.0.1 /index.php/Admin/goods/lst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000573s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000700s ]
+SQL: SHOW COLUMNS FROM `mall_attribute` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `mall_type` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `mall_category` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `mall_goods` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `mall_brand` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `mall_category` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `mall_goods` WHERE `is_delete` = 0  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000308s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\rootwww\shop\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 112 行.
+NOTIC: [8] Undefined variable: val D:\rootwww\shop\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 114 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\rootwww\shop\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 115 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\rootwww\shop\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 117 行.
+NOTIC: [8] Undefined variable: showPage D:\rootwww\shop\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 128 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015215s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015363s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000642s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000994s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001175s ]
+

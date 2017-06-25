@@ -1,0 +1,8 @@
+CREATE TABLE mall.mall_admin
+(
+	id SMALLINT UNSIGNED PRIMARY KEY NOT NULL AUTO_INCREMENT COMMENT 'ID',
+	admin_name VARCHAR(32) NOT NULL COMMENT '管理员名称',
+	password CHAR(32) NOT NULL COMMENT '密码',
+	salt CHAR(6) NOT NULL COMMENT '密码密钥'
+);
+ALTER TABLE mall.mall_admin COMMENT = '管理员表';

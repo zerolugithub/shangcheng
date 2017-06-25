@@ -1,0 +1,54 @@
+[ 2017-06-26T00:09:34+08:00 ] 127.0.0.1 /rootwww/shop/Public/Uploads/20170621//594a127180f54.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000707s ]
+ERR: 无法加载模块:Public
+
+[ 2017-06-26T00:09:34+08:00 ] 127.0.0.1 /rootwww/shop/Public/Uploads/20170621//594a129089d12.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000697s ]
+ERR: 无法加载模块:Public
+
+[ 2017-06-26T00:09:34+08:00 ] 127.0.0.1 /rootwww/shop/Public/Uploads/20170621//594a127942d80.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001559s ]
+ERR: 无法加载模块:Public
+
+[ 2017-06-26T00:09:34+08:00 ] 127.0.0.1 /rootwww/shop/Public/Uploads/20170621//594a128510090.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000886s ]
+ERR: 无法加载模块:Public
+
+[ 2017-06-26T00:10:45+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000897s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-06-26T00:11:26+08:00 ] 127.0.0.1 /Public/Uploads/20170621//594a129089d12.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000732s ]
+ERR: 无法加载模块:Public
+
+[ 2017-06-26T00:11:26+08:00 ] 127.0.0.1 /Public/Uploads/20170621//594a128510090.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000740s ]
+ERR: 无法加载模块:Public
+
+[ 2017-06-26T00:11:26+08:00 ] 127.0.0.1 /Public/Uploads/20170621//594a127942d80.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000732s ]
+ERR: 无法加载模块:Public
+
+[ 2017-06-26T00:11:26+08:00 ] 127.0.0.1 /Public/Uploads/20170621//594a127180f54.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000753s ]
+ERR: 无法加载模块:Public
+

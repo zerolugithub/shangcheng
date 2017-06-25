@@ -1,0 +1,8 @@
+CREATE TABLE mall.mall_goods_photos
+(
+	id MEDIUMINT UNSIGNED PRIMARY KEY AUTO_INCREMENT COMMENT 'id',
+	goods_id SMALLINT UNSIGNED NOT NULL COMMENT '商品ID',
+	goods_ori VARCHAR(100) NOT NULL DEFAULT '' COMMENT '原图',
+	goods_thumb VARCHAR(100) NOT NULL DEFAULT '' COMMENT '缩略图'
+);
+ALTER TABLE mall.mall_goods_photos COMMENT = '商品图片';
