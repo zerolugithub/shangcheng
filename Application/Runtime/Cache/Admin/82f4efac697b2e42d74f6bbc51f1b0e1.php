@@ -53,10 +53,25 @@
                 </td>
             </tr>
             <tr>
+                <td class="label">邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱：</td>
+                <td>
+                    <input type='text' name='email'  /> <span style="color:red">*</span>
+                </td>
+            </tr>
+            <!--<tr>
                 <td class="label">用户状态：</td>
                 <td>
-                    <input type='radio' name='status' checked />启用
-                    <input type='radio' name='status' />禁用
+                    <input type='radio' name='status' value="1" checked />启用
+                    <input type='radio' name='status' value="0" />禁用
+                </td>
+            </tr>-->
+            <tr>
+                <td class="label">所属角色：</td>
+                <td>
+                    <select name="role_id" id="">
+                        <option value="0">请选择……</option>
+                        <?php if(is_array($roleData)): foreach($roleData as $key=>$role): ?><option value="<?php echo ($role["id"]); ?>"><?php echo ($role["role_name"]); ?></option><?php endforeach; endif; ?>
+                    </select>
                 </td>
             </tr>
             <tr>
