@@ -14,20 +14,20 @@ class LoginController extends Controller
     public function login()
     {
         if (IS_POST) {
-            $adminModel = D('Admin');
-            $re = $adminModel -> validate($adminModel -> _login_validate) -> create();
+            $loginModel = D('Admin');
+            $re = $loginModel -> validate($loginModel->_login_validate) -> create();
             if ($re) {
                 //判断用户名和密码是否正确
-                $res = $adminModel -> checkeLogin();
+                $res = $loginModel -> checkeLogin();
                 if ($res) {
                     $this -> success('登陆成功' , U('index/index'));
                     exit;
                 } else {
-                    $this -> error($adminModel -> getError());
+                    $this -> error($loginModel -> getError());
                 }
             } else {
                 //验证失败
-                $this -> error($adminModel -> getError());
+                $this -> error($loginModel -> getError());
             }
         }
         $this -> display();

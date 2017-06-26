@@ -25,14 +25,14 @@
                 <th>编号</th>
                 <th>角色名称</th>
                 <th>角色描述</th>
+                <th>角色权限</th>
                 <th>操作</th>
             </tr>
-            <?php if(is_array($privData)): foreach($privData as $k=>$val): ?><tr align="center" class="0">
-                    <td><?php echo ($k+1); ?></td>
-                    <td align="left" class="first-cell">
-                        <?php echo (str_repeat('&nbsp;&nbsp;',$val["level"]*3)); echo ($val["priv_name"]); ?>
-                    </td>
-                    <td align="center" class="first-cell"><?php echo ($val["controller_name"]); ?></td>
+            <?php if(is_array($roleLst)): foreach($roleLst as $k=>$val): ?><tr align="center" class="0">
+                    <td align="center"><?php echo ($k+1); ?></td>
+                    <td align="right" class="first-cell"><?php echo ($val["role_name"]); ?></td>
+                    <td align="left" class="first-cell"><?php echo ($val["role_desc"]); ?></td>
+                    <td align="left" class="first-cell"><?php echo ($val["priv_name"]); ?></td>
                     <td align="center">
                         <a href="<?php echo U('edit','id='.$cate[id]);?>">编辑</a> |
                         <a href="javascript:void(0)" title="移除" data_id="<?php echo ($cate[id]); ?>" id="del">移除</a>
