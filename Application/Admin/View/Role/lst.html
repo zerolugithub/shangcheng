@@ -25,15 +25,15 @@
                 <th>编号</th>
                 <th>角色名称</th>
                 <th>角色描述</th>
+                <th>角色权限</th>
                 <th>操作</th>
             </tr>
-            <foreach name="privData" key="k" item="val">
+            <foreach name="roleLst" key="k" item="val">
                 <tr align="center" class="0">
-                    <td>{$k+1}</td>
-                    <td align="left" class="first-cell">
-                        {$val.level|str_repeat='&nbsp;&nbsp;',###*3}{$val.priv_name}
-                    </td>
-                    <td align="center" class="first-cell">{$val.controller_name}</td>
+                    <td align="center">{$k+1}</td>
+                    <td align="right" class="first-cell">{$val.role_name}</td>
+                    <td align="left" class="first-cell">{$val.role_desc}</td>
+                    <td align="left" class="first-cell">{$val.priv_name}</td>
                     <td align="center">
                         <a href="{:U('edit','id='.$cate[id])}">编辑</a> |
                         <a href="javascript:void(0)" title="移除" data_id="{$cate[id]}" id="del">移除</a>

@@ -13,7 +13,7 @@
 </head>
 <body>
 <h1>
-    <span class="action-span"><a href="<?php echo U('add');?>">添加角色</a></span>
+    <span class="action-span"><a href="<?php echo U('add');?>">添加权限</a></span>
     <span class="action-span1"><a href="<?php echo U('index/main');?>">ECSHOP 管理中心</a></span>
     <span id="search_id" class="action-span1"> - 权限管理 </span>
     <div style="clear:both"></div>
@@ -23,16 +23,22 @@
         <table width="100%" cellspacing="1" cellpadding="2" id="list-table">
             <tr>
                 <th>编号</th>
-                <th>角色名称</th>
-                <th>角色描述</th>
-                <th>角色权限</th>
+                <th>权限名称</th>
+                <th>控制器名称</th>
+                <th>方法名称</th>
+                <th>是否显示</th>
                 <th>操作</th>
             </tr>
-            <?php if(is_array($roleLst)): foreach($roleLst as $k=>$val): ?><tr align="center" class="0">
-                    <td align="center"><?php echo ($k+1); ?></td>
-                    <td align="right" class="first-cell"><?php echo ($val["role_name"]); ?></td>
-                    <td align="left" class="first-cell"><?php echo ($val["role_desc"]); ?></td>
-                    <td align="left" class="first-cell"><?php echo ($val["priv_name"]); ?></td>
+            <?php if(is_array($privData)): foreach($privData as $k=>$val): ?><tr align="center" class="0">
+                    <td><?php echo ($k+1); ?></td>
+                    <td align="left" class="first-cell">
+                        <?php echo (str_repeat('&nbsp;&nbsp;',$val["level"]*3)); echo ($val["priv_name"]); ?>
+                    </td>
+                    <td align="center" class="first-cell"><?php echo ($val["controller_name"]); ?></td>
+                    <td align="center" class="first-cell"><?php echo ($val["action_name"]); ?></td>
+                    <td width="15%"><img
+                            src="<?php if($val[is_show] == 1): ?>/Public/Admin/Images/yes.gif <?php else: ?> /Public/Admin/Images/no.gif<?php endif; ?>"/>
+                    </td>
                     <td align="center">
                         <a href="<?php echo U('edit','id='.$cate[id]);?>">编辑</a> |
                         <a href="javascript:void(0)" title="移除" data_id="<?php echo ($cate[id]); ?>" id="del">移除</a>
