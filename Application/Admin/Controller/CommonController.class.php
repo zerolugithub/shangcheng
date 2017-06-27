@@ -16,9 +16,8 @@ class CommonController extends Controller
     protected $cateModel;
     protected $goodsModel;
     protected $brandModel;
-    public function __construct()
+    public function _initialize()
     {
-        parent::__construct();
         $this->attrModel=D('Attribute');
         $this->typeModel=D('Type');
         $this->cateModel=D('Category');

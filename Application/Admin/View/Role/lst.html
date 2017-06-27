@@ -35,8 +35,8 @@
                     <td align="left" class="first-cell">{$val.role_desc}</td>
                     <td align="left" class="first-cell">{$val.priv_name}</td>
                     <td align="center">
-                        <a href="{:U('edit','id='.$cate[id])}">编辑</a> |
-                        <a href="javascript:void(0)" title="移除" data_id="{$cate[id]}" id="del">移除</a>
+                        <a href="{:U('edit','id='.$val[id])}">编辑</a> |
+                        <a href="javascript:void(0)" title="移除" data_id="{$val[id]}" id="del">移除</a>
                     </td>
                 </tr>
             </foreach>
@@ -55,9 +55,8 @@
                 var _this=$(this);
                 var id=_this.attr('data_id');
                 console.log(id);
-                $.post('{:U("category/del")}',{'id':id},function(data){
+                $.post('{:U("role/del")}',{'id':id},function(data){
                     if(data['status']==1){
-                        layer.msg(data['info']);
                         _this.parents('tr').remove();
                     }else{
                         layer.msg(data['info']);

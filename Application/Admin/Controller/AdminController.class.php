@@ -7,9 +7,7 @@
  */
 namespace Admin\Controller;
 
-use Think\Controller;
-
-class AdminController extends Controller
+class AdminController extends CommonController
 {
     public function add()
     {
@@ -39,8 +37,13 @@ class AdminController extends Controller
     public function lst()
     {
         $adminModel=D('Admin');
-        $adminData=$adminModel->select();
+        $adminData=$adminModel->where(array('is_admin'=>0))->select();
         $this->assign('adminData',$adminData);
         $this->display();
+    }
+
+    public function del()
+    {
+
     }
 }

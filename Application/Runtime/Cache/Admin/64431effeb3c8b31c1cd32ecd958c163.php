@@ -34,8 +34,8 @@
                     <td align="left" class="first-cell"><?php echo ($val["role_desc"]); ?></td>
                     <td align="left" class="first-cell"><?php echo ($val["priv_name"]); ?></td>
                     <td align="center">
-                        <a href="<?php echo U('edit','id='.$cate[id]);?>">编辑</a> |
-                        <a href="javascript:void(0)" title="移除" data_id="<?php echo ($cate[id]); ?>" id="del">移除</a>
+                        <a href="<?php echo U('edit','id='.$val[id]);?>">编辑</a> |
+                        <a href="javascript:void(0)" title="移除" data_id="<?php echo ($val[id]); ?>" id="del">移除</a>
                     </td>
                 </tr><?php endforeach; endif; ?>
         </table>
@@ -53,9 +53,8 @@
                 var _this=$(this);
                 var id=_this.attr('data_id');
                 console.log(id);
-                $.post('<?php echo U("category/del");?>',{'id':id},function(data){
+                $.post('<?php echo U("role/del");?>',{'id':id},function(data){
                     if(data['status']==1){
-                        layer.msg(data['info']);
                         _this.parents('tr').remove();
                     }else{
                         layer.msg(data['info']);

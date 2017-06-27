@@ -30,7 +30,7 @@
                 <th>操作</th>
             </tr>
             <?php if(is_array($privData)): foreach($privData as $k=>$val): ?><tr align="center" class="0">
-                    <td><?php echo ($k+1); ?></td>
+                    <td><?php echo ($val["id"]); ?></td>
                     <td align="left" class="first-cell">
                         <?php echo (str_repeat('&nbsp;&nbsp;',$val["level"]*3)); echo ($val["priv_name"]); ?>
                     </td>
@@ -40,7 +40,7 @@
                             src="<?php if($val[is_show] == 1): ?>/Public/Admin/Images/yes.gif <?php else: ?> /Public/Admin/Images/no.gif<?php endif; ?>"/>
                     </td>
                     <td align="center">
-                        <a href="<?php echo U('edit','id='.$cate[id]);?>">编辑</a> |
+                        <a href="<?php echo U('edit','id='.$val[id]);?>">编辑</a> |
                         <a href="javascript:void(0)" title="移除" data_id="<?php echo ($cate[id]); ?>" id="del">移除</a>
                     </td>
                 </tr><?php endforeach; endif; ?>

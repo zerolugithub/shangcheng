@@ -1,120 +1,139 @@
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>ECSHOP Menu</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="/Public/Admin/Styles/general.css" rel="stylesheet" type="text/css" />
+    <title>ECSHOP Menu</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="/Public/Admin/Styles/general.css" rel="stylesheet" type="text/css"/>
 
-<style type="text/css">
-body {
-  background: #80BDCB;
-}
-#tabbar-div {
-  background:#278296;
-  padding-left:10px;
-  height:21px;
-  padding-top:0px;
-}
-#tabbar-div p {
-  margin:1px 0 0 0;
-}
-.tab-front {
-  background:#80BDCB;
-  line-height:20px;
-  font-weight:bold;
-  padding:4px 15px 4px 18px;
-  border-right:2px solid #335b64;
-  cursor:hand;
-  cursor:pointer;
-}
-.tab-back {
-  color:#F4FAFB;
-  line-height:20px;
-  padding:4px 15px 4px 18px;
-  cursor:hand;
-  cursor:pointer;
-}
-.tab-hover {
-  color:#F4FAFB;
-  line-height:20px;
-  padding:4px 15px 4px 18px;
-  cursor:hand;
-  cursor:pointer;
-  background:#2F9DB5;
-}
-#top-div
-{
-  padding:3px 0 2px;
-  background:#BBDDE5;
-  margin:5px;
-  text-align:center;
-}
-#main-div {
-  border:1px solid #345C65;
-  padding:5px;
-  margin:5px;
-  background:#FFF;
-}
-#menu-list {
-  padding:0;
-  margin:0;
-}
-#menu-list ul {
-  padding:0;
-  margin:0;
-  list-style-type: none;
-  color:#335B64;
-}
-#menu-list li {
-  padding-left:16px;
-  line-height:16px;
-  cursor:hand;
-  cursor:pointer;
-}
-#main-div a:visited, #menu-list a:link, #menu-list a:hover {
-  color:#335B64
-  text-decoration:none;
-}
-#menu-list a:active {
-  color:#EB8A3D;
-}
-.explode {
-  background:url(/Public/Admin/Images/menu_minus.gif) no-repeat 0px 3px;
-  font-weight:bold;
-}
-.collapse {
-  background:url(/Public/Admin/Images/menu_plus.gif) no-repeat 0px 3px;
-  font-weight:bold;
-}
-.menu-item {
-  background:url(/Public/Admin/Images/menu_arrow.gif) no-repeat 0px 3px;
-  font-weight:normal;
-}
-#help-title {
-  font-size:14px;
-  color:#000080;
-  margin:5px 0;
-  padding:0px;
-}
-#help-content {
-  margin:0;
-  padding:0;
-}
-.tips {
-  color:#CC0000;
-}
-.link {
-  color:#000099;
-}
-</style>
+    <style type="text/css">
+        body {
+            background: #80BDCB;
+        }
+
+        #tabbar-div {
+            background: #278296;
+            padding-left: 10px;
+            height: 21px;
+            padding-top: 0px;
+        }
+
+        #tabbar-div p {
+            margin: 1px 0 0 0;
+        }
+
+        .tab-front {
+            background: #80BDCB;
+            line-height: 20px;
+            font-weight: bold;
+            padding: 4px 15px 4px 18px;
+            border-right: 2px solid #335b64;
+            cursor: hand;
+            cursor: pointer;
+        }
+
+        .tab-back {
+            color: #F4FAFB;
+            line-height: 20px;
+            padding: 4px 15px 4px 18px;
+            cursor: hand;
+            cursor: pointer;
+        }
+
+        .tab-hover {
+            color: #F4FAFB;
+            line-height: 20px;
+            padding: 4px 15px 4px 18px;
+            cursor: hand;
+            cursor: pointer;
+            background: #2F9DB5;
+        }
+
+        #top-div {
+            padding: 3px 0 2px;
+            background: #BBDDE5;
+            margin: 5px;
+            text-align: center;
+        }
+
+        #main-div {
+            border: 1px solid #345C65;
+            padding: 5px;
+            margin: 5px;
+            background: #FFF;
+        }
+
+        #menu-list {
+            padding: 0;
+            margin: 0;
+        }
+
+        #menu-list ul {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+            color: #335B64;
+        }
+
+        #menu-list li {
+            padding-left: 16px;
+            line-height: 16px;
+            cursor: hand;
+            cursor: pointer;
+        }
+
+        #main-div a:visited, #menu-list a:link, #menu-list a:hover {
+            color: #335B64
+            text-decoration: none;
+        }
+
+        #menu-list a:active {
+            color: #EB8A3D;
+        }
+
+        .explode {
+            background: url(/Public/Admin/Images/menu_minus.gif) no-repeat 0px 3px;
+            font-weight: bold;
+        }
+
+        .collapse {
+            background: url(/Public/Admin/Images/menu_plus.gif) no-repeat 0px 3px;
+            font-weight: bold;
+        }
+
+        .menu-item {
+            background: url(/Public/Admin/Images/menu_arrow.gif) no-repeat 0px 3px;
+            font-weight: normal;
+        }
+
+        #help-title {
+            font-size: 14px;
+            color: #000080;
+            margin: 5px 0;
+            padding: 0px;
+        }
+
+        #help-content {
+            margin: 0;
+            padding: 0;
+        }
+
+        .tips {
+            color: #CC0000;
+        }
+
+        .link {
+            color: #000099;
+        }
+    </style>
 
 </head>
 <body>
 <div id="tabbar-div">
     <p>
-        <span style="float:right; padding:3px 5px;" >
+        <span style="float:right; padding:3px 5px;">
             <a href="javascript:toggleCollapse();">
-                <img id="toggleImg" src="/Public/Admin/Images/menu_minus.gif" width="9" height="9" border="0" alt="闭合" />
+                <img id="toggleImg" src="/Public/Admin/Images/menu_minus.gif" width="9" height="9" border="0" alt="闭合"/>
             </a>
         </span>
         <span class="tab-front" id="menu-tab">菜单</span>
@@ -123,36 +142,12 @@ body {
 <div id="main-div">
     <div id="menu-list">
         <ul id="menu-ul">
-            <li class="explode" key="02_cat_and_goods" name="menu">
-            商品管理
-                <ul>
-                    <li class="menu-item"><a href="<?php echo U('goods/lst');?>" target="main-frame">商品列表</a></li>
-                    <li class="menu-item"><a href="<?php echo U('goods/add');?>" target="main-frame">添加新商品</a></li>
-                    <li class="menu-item"><a href="<?php echo U('goods/trash');?>" target="main-frame">商品回收站</a></li>
-                    <li class="menu-item"><a href="<?php echo U('type/lst');?>" target="main-frame">商品类型</a></li>
-                    <li class="menu-item"><a href="<?php echo U('brand/lst');?>" target="main-frame">商品品牌</a></li>
-                    <li class="menu-item"><a href="<?php echo U('category/lst');?>" target="main-frame">商品分类</a></li>
-                </ul>
-            </li>
-
-            <li class="explode" key="04_order" name="menu">
-            订单管理
-                <ul>
-                    <li class="menu-item"><a href="orderList.html" target="main-frame">订单列表</a></li>
-                    <li class="menu-item"><a href="orderQuery.html" target="main-frame">订单查询</a></li>
-                    <li class="menu-item"><a href="orderAdd.html" target="main-frame">添加订单</a></li>
-                    <li class="menu-item"><a href="delivery_list.html" target="main-frame">发货单列表</a></li>
-                    <li class="menu-item"><a href="back_list.html" target="main-frame">退货单列表</a></li>
-                </ul>
-            </li>
-            <li class="explode" key="08_members" name="menu">
-            会员管理
-                <ul>
-                    <li class="menu-item"><a href="userList.html" target="main-frame">会员列表</a></li>
-                    <li class="menu-item"><a href="userAdd.html" target="main-frame">添加会员</a></li>
-                    <li class="menu-item"><a href="userMessage.html" target="main-frame">会员留言</a></li>
-                </ul>
-            </li>
+            <?php if(is_array($menuData)): foreach($menuData as $key=>$menu): ?><li class="explode" key="02_cat_and_goods" name="menu">
+                    <?php echo ($menu["priv_name"]); ?>
+                    <ul>
+                        <?php if(is_array($menu[_child])): $i = 0; $__LIST__ = $menu[_child];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$p): $mod = ($i % 2 );++$i;?><li class="menu-item"><a href="<?php echo U($p[controller_name].'/'.$p[action_name]);?>" target="main-frame"><?php echo ($p["priv_name"]); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
+                    </ul>
+                </li><?php endforeach; endif; ?>
         </ul>
     </div>
     <div id="help-div" style="display:none">
@@ -170,14 +165,14 @@ body {
 
     function toggleCollapse() {
         var items = document.getElementsByTagName('LI');
-        for(i = 0; i < items.length; i++) {
-            if(collapse) {
+        for (i = 0; i < items.length; i++) {
+            if (collapse) {
                 if (items[i].className == "explode") {
-                    toggleCollapseExpand(items[i],"collapse");
+                    toggleCollapseExpand(items[i], "collapse");
                 }
             } else {
-                if(items[i].className == "collapse") {
-                    toggleCollapseExpand(items[i],"explode");
+                if (items[i].className == "collapse") {
+                    toggleCollapseExpand(items[i], "explode");
                     ToggleHanlder.Reset();
                 }
             }
@@ -194,49 +189,49 @@ body {
                     if (status == null) {
                         if (obj.childNodes[1].style.display != "none") {
                             obj.childNodes[1].style.display = "none";
-                            ToggleHanlder.RecordState(obj.getAttribute("key"),"collapse");
+                            ToggleHanlder.RecordState(obj.getAttribute("key"), "collapse");
                             obj.className = "collapse";
                         } else {
                             obj.childNodes[1].style.display = "block";
-                            ToggleHanlder.RecordState(obj.getAttribute("key"),"explode");
+                            ToggleHanlder.RecordState(obj.getAttribute("key"), "explode");
                             obj.className = "explode";
                         }
                         break;
                     } else {
-                        if(status == "collapse") {
-                            ToggleHanlder.RecordState(obj.getAttribute("key"),"collapse");
+                        if (status == "collapse") {
+                            ToggleHanlder.RecordState(obj.getAttribute("key"), "collapse");
                             obj.className = "collapse";
                         } else {
-                            ToggleHanlder.RecordState(obj.getAttribute("key"),"explode");
+                            ToggleHanlder.RecordState(obj.getAttribute("key"), "explode");
                             obj.className = "explode";
-                            }
-                            obj.childNodes[1].style.display = (status == "explode") ? "block" : "none";
+                        }
+                        obj.childNodes[1].style.display = (status == "explode") ? "block" : "none";
                     }
                 }
             }
         }
     }
 
-    document.getElementById('menu-list').onclick = function(e) {
+    document.getElementById('menu-list').onclick = function (e) {
         var obj = Utils.srcElement(e);
         toggleCollapseExpand(obj);
     }
 
-    document.getElementById('tabbar-div').onmouseover = function(e) {
+    document.getElementById('tabbar-div').onmouseover = function (e) {
         var obj = Utils.srcElement(e);
         if (obj.className == "tab-back") {
             obj.className = "tab-hover";
         }
     }
 
-    document.getElementById('tabbar-div').onmouseout = function(e) {
+    document.getElementById('tabbar-div').onmouseout = function (e) {
         var obj = Utils.srcElement(e);
         if (obj.className == "tab-hover") {
             obj.className = "tab-back";
         }
     }
 
-    document.getElementById('tabbar-div').onclick = function(e) {
+    document.getElementById('tabbar-div').onclick = function (e) {
         var obj = Utils.srcElement(e);
         var hlpTab = document.getElementById('help-tab');
         var mnuDiv = document.getElementById('menu-list');
@@ -252,11 +247,11 @@ body {
             pos1 = loc.lastIndexOf("/");
             pos2 = loc.lastIndexOf("?");
             pos3 = loc.indexOf("act=");
-            pos4 = loc.indexOf("&",pos3);
+            pos4 = loc.indexOf("&", pos3);
 
             filename = loc.substring(pos1 + 1, pos2 - 4);
-            act = pos4 < 0 ? loc.substring(pos3 + 4) : loc.substring(pos3 + 4,pos4);
-            loadHelp(filename,act);
+            act = pos4 < 0 ? loc.substring(pos3 + 4) : loc.substring(pos3 + 4, pos4);
+            loadHelp(filename, act);
         }
     }
 
@@ -264,37 +259,37 @@ body {
     var ToggleHanlder = new Object();
 
     Object.extend(
-        ToggleHanlder ,{
-            SourceObject : new Object(),
-            CookieName   : 'Toggle_State',
-            RecordState : function(name,state){
-                if(state == "collapse") {
+        ToggleHanlder, {
+            SourceObject: new Object(),
+            CookieName: 'Toggle_State',
+            RecordState: function (name, state) {
+                if (state == "collapse") {
                     this.SourceObject[name] = state;
                 } else {
-                    if(this.SourceObject[name]) {
+                    if (this.SourceObject[name]) {
                         delete(this.SourceObject[name]);
                     }
                 }
                 var date = new Date();
                 date.setTime(date.getTime() + 99999999);
-                document.setCookie(this.CookieName, this.SourceObject.toJSONString(),date.toGMTString());
+                document.setCookie(this.CookieName, this.SourceObject.toJSONString(), date.toGMTString());
             },
 
-            Reset :function() {
+            Reset: function () {
                 var date = new Date();
                 date.setTime(date.getTime() + 99999999);
-                document.setCookie(this.CookieName,"{}",date.toGMTString());
+                document.setCookie(this.CookieName, "{}", date.toGMTString());
             },
 
-            Load : function() {
-                if(document.getCookie(this.CookieName) != null) {
-                    this.SourceObject = eval("("+ document.getCookie(this.CookieName) +")");
+            Load: function () {
+                if (document.getCookie(this.CookieName) != null) {
+                    this.SourceObject = eval("(" + document.getCookie(this.CookieName) + ")");
                     var items = document.getElementsByTagName('LI');
-                    for(var i = 0; i < items.length; i++) {
-                        if( items[0].getAttribute("name") == "menu" && items[0].getAttribute("id") != '20_yun') {
-                            for(var k in this.SourceObject) {
-                                if(typeof(items[i]) == "object") {
-                                    if(items[i].getAttribute('key') == k) {
+                    for (var i = 0; i < items.length; i++) {
+                        if (items[0].getAttribute("name") == "menu" && items[0].getAttribute("id") != '20_yun') {
+                            for (var k in this.SourceObject) {
+                                if (typeof(items[i]) == "object") {
+                                    if (items[i].getAttribute('key') == k) {
                                         toggleCollapseExpand(items[i], this.SourceObject[k]);
                                         collapse = false;
                                     }

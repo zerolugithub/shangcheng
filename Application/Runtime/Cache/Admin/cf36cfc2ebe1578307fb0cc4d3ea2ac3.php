@@ -3,7 +3,7 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>ECSHOP 管理中心 - 添加角色 </title>
+    <title>ECSHOP 管理中心 - 角色修改 </title>
     <meta name="robots" content="noindex, nofollow">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link href="/Public/Admin/Styles/general.css" rel="stylesheet" type="text/css"/>
@@ -27,7 +27,7 @@
 <h1>
     <span class="action-span"><a href="<?php echo U('lst');?>">角色列表</a></span>
     <span class="action-span1"><a href="__GROUP__">ECSHOP 管理中心</a></span>
-    <span id="search_id" class="action-span1"> - 添加角色 </span>
+    <span id="search_id" class="action-span1"> - 修改角色 </span>
     <div style="clear:both"></div>
 </h1>
 <div class="main-div">
@@ -37,13 +37,13 @@
             <tr>
                 <td class="label">角色名称:</td>
                 <td>
-                    <input type='text' name='role_name' maxlength="20" value='' size='27'/> <font color="red">*</font>
+                    <input type='text' name="role[role_name]" maxlength="20" value='<?php echo ($roleData["role_name"]); ?>' size='27'/> <font color="red">*</font>
                 </td>
             </tr>
             <tr>
                 <td class="label">角色描述:</td>
                 <td>
-                    <textarea rows="5" cols="25" name="role_desc"></textarea>
+                    <textarea rows="5" cols="25" name="role[role_desc]" ><?php echo ($roleData["role_desc"]); ?></textarea>
                 </td>
             </tr>
         </table>
@@ -52,16 +52,16 @@
         <table width="1000" align="center" id="privSel">
             <?php if(is_array($privData)): foreach($privData as $key=>$priv): ?><tr>
                     <td class="label" align="left" width="30%">
-                        <input type="checkbox" name="priv_id[]" id="priv_<?php echo ($priv["id"]); ?>" class="partSel" data="<?php echo ($priv["id"]); ?>" value="<?php echo ($priv["id"]); ?>">
+                        <input type="checkbox" name="priv_id[]" id="priv_<?php echo ($priv["id"]); ?>" class="partSel" data="<?php echo ($priv["id"]); ?>" <?php if(in_array($priv[id],$sel)): ?>checked<?php endif; ?> value="<?php echo ($priv["id"]); ?>">
                         <label for="priv_<?php echo ($priv["id"]); ?>"><?php echo ($priv["priv_name"]); ?></label>
                     </td>
                     <td align="left" width="70%" id="check_<?php echo ($priv["id"]); ?>">
-                        <?php if(is_array($priv[_child])): foreach($priv[_child] as $k=>$son): if($son[_child]): ?><input type="checkbox" name="priv_id[]" id="priv_<?php echo ($son["id"]); ?>" class="sel" value="<?php echo ($son["id"]); ?>">
+                        <?php if(is_array($priv[_child])): foreach($priv[_child] as $k=>$son): if($son[_child]): ?><input type="checkbox" name="priv_id[]" id="priv_<?php echo ($son["id"]); ?>" class="sel" <?php if(in_array($son[id],$sel)): ?>checked<?php endif; ?> value="<?php echo ($son["id"]); ?>" >
                                 <label for="priv_<?php echo ($son["id"]); ?>"><?php echo ($son["priv_name"]); ?></label>
-                                <?php if(is_array($son[_child])): foreach($son[_child] as $i=>$v): ?><input type="checkbox" name="priv_id[]" id="priv_<?php echo ($v["id"]); ?>"  class="sel" value="<?php echo ($v["id"]); ?>">
+                                <?php if(is_array($son[_child])): foreach($son[_child] as $i=>$v): ?><input type="checkbox" name="priv_id[]" id="priv_<?php echo ($v["id"]); ?>"  class="sel" <?php if(in_array($v[id],$sel)): ?>checked<?php endif; ?> value="<?php echo ($v["id"]); ?>">
                                     <label for="priv_<?php echo ($v["id"]); ?>"><?php echo ($v["priv_name"]); ?></label><?php endforeach; endif; ?>
                                 <?php else: ?>
-                                <input type="checkbox" name="priv_id[]" id="priv_<?php echo ($son["id"]); ?>" class="sel" value="<?php echo ($son["id"]); ?>">
+                                <input type="checkbox" name="priv_id[]" id="priv_<?php echo ($son["id"]); ?>" class="sel" <?php if(in_array($son[id],$sel)): ?>checked<?php endif; ?> value="<?php echo ($son["id"]); ?>">
                                 <label for="priv_<?php echo ($son["id"]); ?>"><?php echo ($son["priv_name"]); ?></label><?php endif; ?>
                             <?php if($k+$i == 4): ?><br/><?php endif; endforeach; endif; ?>
                     </td>
@@ -71,7 +71,8 @@
                 <tr>
                     <td class="label"></td>
                     <td>
-                        <input type="checkbox" value="" id="selAll"/>全选
+                        <input type="checkbox" value="" id="selAll"/>
+                        <label for="selAll">全选</label>
                     </td>
                 </tr>
             <table>
@@ -85,6 +86,7 @@
             </table>
         </table>
         </div>
+        <input type="hidden" value="<?php echo ($roleData["id"]); ?>" name="id">
     </form>
 
 </div>

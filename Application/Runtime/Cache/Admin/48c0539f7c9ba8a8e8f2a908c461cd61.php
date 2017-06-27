@@ -7,6 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="/Public/Admin/Styles/general.css" rel="stylesheet" type="text/css" />
 <link href="/Public/Admin/Styles/main.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/Public/Admin/Js/jquery-1.8.2.min.js"></script>
 </head>
 <body>
 <h1>
@@ -43,7 +44,9 @@
                 <td><?php echo ($goods["goods_name"]); ?></td>
                 <td><?php echo ($goods["goods_sn"]); ?></td>
                 <td align="right"><?php echo ($goods["shop_price"]); ?></td>
-                <td align="center"><a href="">还原</a> | <a href="">删除</a></td>
+                <td align="center">
+                    <a href="javascript:void(0)" id="reback" data="<?php echo ($goods["id"]); ?>">还原</a> |
+                    <a href="">删除</a></td>
             </tr><?php endforeach; endif; ?>
             <!-- 分页 -->
             <tr>
@@ -73,3 +76,14 @@
 版权所有 &copy; 2005-2012 上海商派网络科技有限公司，并保留所有权利。</div>
 </body>
 </html>
+<script>
+    $(function(){
+        $('#reback').live('click',function(){
+            var _this=$(this);
+            var id = _this.attr('data');
+            $.post("<?php echo U('Goods/reback');?>",{'id':id},function(data){
+                console.log(data);
+            },'json')
+        })
+    })
+</script>

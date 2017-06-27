@@ -31,7 +31,7 @@
             </tr>
             <foreach name="privData" key="k" item="val">
                 <tr align="center" class="0">
-                    <td>{$k+1}</td>
+                    <td>{$val.id}</td>
                     <td align="left" class="first-cell">
                         {$val.level|str_repeat='&nbsp;&nbsp;',###*3}{$val.priv_name}
                     </td>
@@ -41,7 +41,7 @@
                             src="<if condition='$val[is_show] eq 1'> __ADMIN__/Images/yes.gif <else /> __ADMIN__/Images/no.gif </if>"/>
                     </td>
                     <td align="center">
-                        <a href="{:U('edit','id='.$cate[id])}">编辑</a> |
+                        <a href="{:U('edit','id='.$val[id])}">编辑</a> |
                         <a href="javascript:void(0)" title="移除" data_id="{$cate[id]}" id="del">移除</a>
                     </td>
                 </tr>

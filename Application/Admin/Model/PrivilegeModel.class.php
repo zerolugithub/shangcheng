@@ -31,4 +31,5 @@ class PrivilegeModel extends Model
         //无限极分类显示
         return list_to_tree($privData);
     }
+
 }
