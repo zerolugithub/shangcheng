@@ -36,7 +36,7 @@
                     <td width="15%" align="center"><span><?php echo (date('Y-d-m H:i:s',$val["add_time"])); ?></span></td>
                     <td width="15%" align="center"><span><?php echo (date('Y-d-m H:i:s',$val["last_login_time"])); ?></span></td>
                     <td width="30%" align="center">
-                        <a href="<?php echo U('Attribute/lst','type_id='.$val[id]);?>">权限分配</a> |
+                        <!--<a href="<?php echo U('priv','id='.$val[id]);?>">权限分配</a> |-->
                         <a href="<?php echo U('edit',array('id'=>$val[id]));?>">编辑</a> |
                         <a href="javascript:void(0)" data_id="<?php echo ($val["id"]); ?>" title="移除" id="del">移除</a>
                     </td>

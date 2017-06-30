@@ -3,7 +3,7 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>ECSHOP 管理中心 - 添加分类 </title>
+    <title>ECSHOP 管理中心 - 修改管理员 </title>
     <meta name="robots" content="noindex, nofollow">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link href="__ADMIN__/Styles/general.css" rel="stylesheet" type="text/css"/>
@@ -26,19 +26,57 @@
 </head>
 <body>
 <h1>
-    <span class="action-span"><a href="{:U('lst')}">商品类型</a></span>
+    <span class="action-span"><a href="{:U('lst')}">管理员列表</a></span>
     <span class="action-span1"><a href="{:U('index/main')}">ECSHOP 管理中心</a></span>
-    <span id="search_id" class="action-span1"> - 修改类型 </span>
+    <span id="search_id" class="action-span1"> - 修改管理员 </span>
     <div style="clear:both"></div>
 </h1>
 <div class="main-div">
-    <form action="__ACTION__" method="post"  id="type_frm" >
-        <input type="hidden" name="id" value="{$typeData.id}">
-        <table width="100%" id="general-table">
+    <form action="" method="post"  id="type_frm" >
+        <table width="100%" id="general-table" align="center">
             <tr>
-                <td class="label">分类名称:</td>
+                <td class="label" style="width: 35%">用&nbsp;户&nbsp;名：</td>
                 <td>
-                    <input type='text' name='type_name' value="{$typeData.type_name}" id="type_name" maxlength="20"  size='27'/> <span style="color:red">*</span>
+                    <input type='text' name='admin_name' id="admin_name" value="{$adminInfo.admin_name}" /> <span style="color:red">*</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="label">密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码：</td>
+                <td>
+                    <input type='password' name='password' id="password" /> <span>如果不输入则使用原来密码</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="label">确认密码：</td>
+                <td>
+                    <input type='password' name='repassword'  />
+                </td>
+            </tr>
+            <tr>
+                <td class="label">邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱：</td>
+                <td>
+                    <input type='text' name='email' value="{$adminInfo.email}"  /> <span style="color:red">*</span>
+                </td>
+            </tr>
+            <!--<tr>
+                <td class="label">用户状态：</td>
+                <td>
+                    <input type='radio' name='status' value="1" checked />启用
+                    <input type='radio' name='status' value="0" />禁用
+                </td>
+            </tr>-->
+            <tr>
+                <td class="label">所属角色：</td>
+                <td>
+                    <select name="role_id" id="">
+                        <foreach name="roleData" item="role">
+                            <if condition="$role[id] eq $adminInfo[role_id]">
+                                <option value="{$role.id}" selected>{$role.role_name}</option>
+                                <else/>
+                                <option value="{$role.id}">{$role.role_name}</option>
+                            </if>
+                        </foreach>
+                    </select>
                 </td>
             </tr>
             <tr>

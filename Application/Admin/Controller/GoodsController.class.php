@@ -67,32 +67,17 @@ class GoodsController extends CommonController
         if (IS_POST) {
             $re = $photoModel -> create($_POST);
             if ($re) {
-                $this->success('添加成功');
-                /*$filename = array_keys($_FILES)[0];
-                $flag = $photoModel -> hasPhoto($_FILES , $filename);
-                if ($flag) {
-                    $imgs = moreUploadFiles($filename , 'Goods' , array('img_' => array(400 , 400) , 'thumb_' => array(100 , 100)));
-                    if ($imgs['status'] == 1) {
-                        foreach ($imgs['info'] as $v) {
-                            $photoModel -> goods_id = $goods_id;
-                            $photoModel -> goods_ori = $v[0];
-                            $photoModel -> goods_thumb = $v[1];
-                            $photoModel -> add();
-                        }
-                    } else {
-                        $this -> error($imgs['info']);
-                    }
-                }*/
+                $this -> success('添加成功');
+                exit;
             }
-            $error= $photoModel->getError();
-            if(empty($error)){
-                $this->error('添加失败');
-            }else{
-                $this->error($error);
+            $error = $photoModel -> getError();
+            if (empty($error)) {
+                $this -> error('添加失败');
+            } else {
+                $this -> error($error);
             }
         }
-
-        $this->assign('id',$id);
+        $this -> assign('id' , $id);
         $this -> display();
     }
 
@@ -149,6 +134,16 @@ class GoodsController extends CommonController
             $this -> display();
         }
 
+    }
+
+    //回收站还原商品
+    public function reback()
+    {
+        $goods_id = I('id');
+        $this -> goodsModel -> find($goods_id);
+        $this -> goodsModel -> is_delete = 0;
+        $re = $this -> goodsModel -> save();
+//        if($re=)
     }
 
     /**

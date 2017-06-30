@@ -49,9 +49,9 @@ class AdminModel extends Model
         //获取角色ID
         $role_id = I('role_id');
         //获取管理员ID
-        $admin_id=$data['id'];
+        $admin_id = $data['id'];
         //向中间表admin_role 中插数据
-        M('AdminRole')->add(array('role_id'=>$role_id,'admin_id'=>$admin_id));
+        M('AdminRole') -> add(array('role_id' => $role_id , 'admin_id' => $admin_id));
     }
 
     /**
@@ -101,5 +101,19 @@ class AdminModel extends Model
             $this -> error = '用户名不正确或不存在';
             return false;
         }
+    }
+
+    public function menuLst()
+    {
+        if (session('admin_name') != 'admin') {
+            $admin_id = session('uid');
+            $admin_role = M('AdminRole') -> where(array('admin_id' => $admin_id)) -> find();//暂未考虑用户与角色是多对多的关系，只考虑一对多的情况下
+            $meunData = M('RolePrivilege') -> join("a left join mall_privilege as b on a.priv_id=b.id") -> where(array('a.role_id' => $admin_role['role_id'] , 'b.is_show' => 1)) -> field("b.*") -> select();
+            return $meunData;
+        }else{
+            $meunData = D('Privilege')->where(array('is_show'=>1))->select();
+            return $meunData;
+        }
+
     }
 }

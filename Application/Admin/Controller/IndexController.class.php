@@ -26,6 +26,10 @@ class IndexController extends CommonController
 
     public function menu()
     {
+        $adminModel = D('Admin');
+        $menuData = $adminModel->menuLst();
+        $menuData = list_to_tree($menuData);
+        $this->assign('menuData',$menuData);
         $this -> display();
     }
 }

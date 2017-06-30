@@ -3,7 +3,7 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>ECSHOP 管理中心 - 添加分类 </title>
+    <title>ECSHOP 管理中心 - 添加角色 </title>
     <meta name="robots" content="noindex, nofollow">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link href="/Public/Admin/Styles/general.css" rel="stylesheet" type="text/css"/>
@@ -52,13 +52,17 @@
         <table width="1000" align="center" id="privSel">
             <?php if(is_array($privData)): foreach($privData as $key=>$priv): ?><tr>
                     <td class="label" align="left" width="30%">
-                        <input type="checkbox" name="priv_id[]" class="partSel" data="<?php echo ($priv["id"]); ?>" value="<?php echo ($priv["id"]); ?>"><?php echo ($priv["priv_name"]); ?>
+                        <input type="checkbox" name="priv_id[]" id="priv_<?php echo ($priv["id"]); ?>" class="partSel" data="<?php echo ($priv["id"]); ?>" value="<?php echo ($priv["id"]); ?>">
+                        <label for="priv_<?php echo ($priv["id"]); ?>"><?php echo ($priv["priv_name"]); ?></label>
                     </td>
                     <td align="left" width="70%" id="check_<?php echo ($priv["id"]); ?>">
-                        <?php if(is_array($priv[_child])): foreach($priv[_child] as $k=>$son): if($son[_child]): ?><input type="checkbox" name="priv_id[]" class="sel" value="<?php echo ($son["id"]); ?>"><?php echo ($son["priv_name"]); ?>
-                                <?php if(is_array($son[_child])): foreach($son[_child] as $i=>$v): ?><input type="checkbox" name="priv_id[]" class="sel" value="<?php echo ($v["id"]); ?>"><?php echo ($v["priv_name"]); endforeach; endif; ?>
+                        <?php if(is_array($priv[_child])): foreach($priv[_child] as $k=>$son): if($son[_child]): ?><input type="checkbox" name="priv_id[]" id="priv_<?php echo ($son["id"]); ?>" class="sel" value="<?php echo ($son["id"]); ?>">
+                                <label for="priv_<?php echo ($son["id"]); ?>"><?php echo ($son["priv_name"]); ?></label>
+                                <?php if(is_array($son[_child])): foreach($son[_child] as $i=>$v): ?><input type="checkbox" name="priv_id[]" id="priv_<?php echo ($v["id"]); ?>"  class="sel" value="<?php echo ($v["id"]); ?>">
+                                    <label for="priv_<?php echo ($v["id"]); ?>"><?php echo ($v["priv_name"]); ?></label><?php endforeach; endif; ?>
                                 <?php else: ?>
-                                <input type="checkbox" name="priv_id[]" class="sel" value="<?php echo ($son["id"]); ?>"><?php echo ($son["priv_name"]); endif; ?>
+                                <input type="checkbox" name="priv_id[]" id="priv_<?php echo ($son["id"]); ?>" class="sel" value="<?php echo ($son["id"]); ?>">
+                                <label for="priv_<?php echo ($son["id"]); ?>"><?php echo ($son["priv_name"]); ?></label><?php endif; ?>
                             <?php if($k+$i == 4): ?><br/><?php endif; endforeach; endif; ?>
                     </td>
                 </tr><?php endforeach; endif; ?>
